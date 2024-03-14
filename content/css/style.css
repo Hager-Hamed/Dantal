@@ -1,0 +1,1830 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@300;400;500;600;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* *********************************************   */
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #4d5ce5;
+  text-decoration: none;
+}
+
+.button {
+  margin-top: 1.5rem;
+  font-family: "Lexend Deca", Sans-serif;
+  font-size: 18px;
+  border: none;
+  color: #ffffff;
+  background-color: #4268d2;
+  border-radius: 100px 100px 100px 100px;
+  box-shadow: 0px 4px 20px 0px rgba(148, 226.99999999999997, 255, 0.26);
+  padding: 15px 45px 15px 45px;
+}
+
+.button:hover {
+  transition: all 0.5s;
+  transform: translateY(-8px);
+}
+/*
+.spn {
+  color: #92c1fa;
+}
+
+.spn:hover {
+  color: #ffff;
+} */
+
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+/* =========================== start High Quality =========================== */
+
+/* ===========================  Navbare ===================== */
+
+.header {
+  padding: 1.5rem;
+}
+
+.header__info {
+  display: flex;
+  /* flex-direction: row; */
+  align-items: center;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+.img-fluid {
+  width: 10rem;
+}
+
+.nav__bars {
+  display: none;
+}
+
+.navbar {
+  padding: 0;
+}
+
+.navbar ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+
+.navbar li {
+  position: relative;
+}
+
+.navbar a,
+.navbar a:focus {
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
+  padding: 10px 0 10px 30px;
+  font-size: 17px;
+  font-weight: 600;
+  color: #000;
+  white-space: nowrap;
+  transition: 0.3s;
+}
+
+.navbar a i,
+.navbar a:focus i {
+  font-size: 12px;
+  line-height: 0;
+  margin-left: 5px;
+}
+
+.navbar a:hover,
+.navbar .active,
+.navbar .active:focus,
+.navbar li:hover > a {
+  color: #4d5ce5;
+}
+
+.navbar .dropdown ul {
+  display: block;
+  position: absolute;
+  left: 14px;
+  top: calc(100% + 30px);
+  margin: 0;
+  padding: 10px 0;
+  z-index: 99;
+  opacity: 0;
+  visibility: hidden;
+  background: #fff;
+  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+  transition: 0.3s;
+  border-radius: 4px;
+}
+
+.navbar .dropdown ul li {
+  min-width: 200px;
+}
+
+.navbar .dropdown ul a {
+  padding: 10px 20px;
+  font-size: 15px;
+  text-transform: none;
+  font-weight: 700;
+  color: #000;
+}
+
+.navbar .dropdown ul a:hover,
+.navbar .dropdown ul .active:hover,
+.navbar .dropdown ul li:hover > a {
+  color: #4d5ce5;
+}
+
+.navbar .dropdown:hover > ul {
+  opacity: 1;
+  top: 100%;
+  visibility: visible;
+}
+
+.navbar .getstarted,
+.navbar .getstarted:focus {
+  padding: 8px 35px;
+  margin-left: 30px;
+  border-radius: 50px;
+  color: #fff;
+  font-size: 16px;
+  background-color: #4d5ce5;
+}
+
+.navbar .getstarted:hover,
+.navbar .getstarted:focus:hover {
+  color: #fff;
+  background: #3353ae;
+}
+
+/* =========================== End  Navbare ===================== */
+
+/* ======================== Start High Quality ==================== */
+
+.hero {
+  &::before {
+    content: "";
+    background-image: url(../images/filter.png);
+    background-size: cover;
+    position: absolute;
+    background-color: #1ab6eb;
+    opacity: 0.1;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+  }
+}
+
+.hero__card {
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  padding: 1rem 3rem 3rem 3rem;
+  /* transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s; */
+}
+
+.hero__card__images {
+  position: relative;
+  overflow: hidden;
+}
+
+.hero__card__images img {
+  width: 100%;
+}
+
+.hero__card__images__pos {
+  top: 2rem;
+  position: absolute;
+}
+
+/* .hero__card__title {
+
+  width: 50%;
+} */
+
+.hero__card__headeer {
+  color: #142349;
+  font-family: "Lexend Deca", Sans-serif;
+  font-size: 76px;
+  font-weight: 500;
+  line-height: 1.2em;
+  letter-spacing: -1.7px;
+}
+
+.hero__card__apan {
+  color: #4268d2;
+}
+
+.hero__card__text {
+  color: #616a85;
+  font-family: "Lexend Deca", Sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.6em;
+  width: 84%;
+}
+
+.hero__card__box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2rem;
+}
+
+.hero__card__box p {
+  color: #616a85ba;
+  font-family: "Lexend Deca", Sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+/* ============================= start Slider===================== */
+
+.Slider {
+  /* padding: 25px 0px 25px 0px; */
+  border-style: solid;
+  border-width: 2px 0px 2px 0px;
+  /* border-color: #616a852b; */
+}
+
+.Slider p {
+  text-align: center;
+  color: #616a85;
+  font-family: "Lexend Deca", Sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* ========================== End Slider ========================= */
+
+/* ========================= Start First Impressions  ============================== */
+
+.Smile {
+  background-image: url(../images/i3urhfi3r.png);
+  background-position: center left;
+  background-repeat: no-repeat;
+  background-size: contain;
+  opacity: 1;
+  /* transition: background 0.3s, border-radius 0.3s, opacity 0.3s; */
+}
+
+.Smile .container {
+  margin-top: 5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 5rem;
+  align-items: center;
+  margin-bottom: 100px;
+}
+
+.Smile__text {
+  width: 40%;
+}
+
+.Smile__img {
+  width: 50%;
+}
+.Smile__img img {
+  width: 100%;
+}
+
+.Smile__header {
+  text-align: left;
+  color: #142349;
+  font-family: "Lexend Deca", Sans-serif;
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 1.2em;
+  letter-spacing: -0.7px;
+}
+
+.Smile__text p {
+  color: #616a85;
+  font-family: "Lexend Deca", Sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.6em;
+}
+
+.tem__anker {
+  padding: 2rem;
+}
+
+.tem__anker a {
+  font-family: "Lexend Deca", Sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 0.8em;
+  color: #4268d2;
+}
+
+/* ===========================   End First Impressions ======================================== */
+
+/* ========================= Start Teeth ========================== */
+
+.teeth {
+  text-align: center;
+  margin-bottom: 5rem;
+  position: relative;
+  height: auto;
+  &::before {
+    content: "";
+    background-image: url(../images/uywgdc.png);
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: #1ab6eb;
+    opacity: 0.1;
+  }
+}
+
+.teeth p {
+  color: #616a85;
+  font-family: "Lexend Deca", Sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.6em;
+  margin-top: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.teeth__box {
+  /* padding-left: 5rem; */
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 1rem;
+  /* padding: 1rem 10%; */
+}
+
+.teeth__boxx {
+  /* padding-left: 8rem; */
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 1rem;
+}
+
+.teeth__box .Cardd,
+.teeth__boxx .Cardd {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  padding: 1rem;
+  border-radius: 1rem;
+  background-color: #dee2e6;
+}
+
+.Cardd h6 {
+  margin-top: 1rem;
+  text-align: left;
+  color: #142349;
+  font-family: "Lexend Deca", Sans-serif;
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.Cardd__text {
+  margin-top: 1rem;
+  color: #616a85;
+  font-family: "Lexend Deca", Sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  text-align: left;
+}
+
+.Carddbg {
+  border-radius: 0 5rem;
+  background-color: #4268d2;
+  position: relative;
+}
+
+.Carddbg p {
+  margin-left: 1rem;
+  text-align: left;
+  color: #ffffff;
+  font-family: "Lexend Deca", Sans-serif;
+  font-size: 46px;
+  font-weight: 400;
+  line-height: 1.1em;
+  letter-spacing: 0px;
+}
+
+.Carddbg img {
+  width: 17%;
+  position: absolute;
+  right: 0;
+  top: 5;
+  bottom: 0;
+}
+
+/* ======================== End Teeth ====================== */
+
+/* ========================= Start Dentists    ======================== */
+
+/* .dentists {
+  background-color: #1ab6eb24;
+} */
+
+.dentists__card {
+  margin-left: 2rem;
+  margin-bottom: 3rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.dentists__card p {
+  color: #616a85;
+  font-family: "Lexend Deca", Sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.6em;
+}
+
+.dentists__card__anker a {
+  font-family: "Lexend Deca", Sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 0.8em;
+  color: #4268d2;
+}
+
+.dentists__number {
+  margin-bottom: 3rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+.dentists__number div {
+  border-style: solid;
+  border-width: 0px 2px 0px 0px;
+  border-color: #eef0ed;
+  position: relative;
+}
+
+.dentists__number div:nth-last-child(odd) {
+  border: 0;
+}
+
+.dentists__number h5 {
+  text-align: center;
+  color: #4268d238;
+  font-family: "Lexend Deca", Sans-serif;
+  font-size: 136px;
+  font-weight: 400;
+  line-height: 1em;
+  position: relative;
+}
+
+.dentists__number p {
+  position: absolute;
+  top: 50%;
+  left: 38%;
+  font-size: 1.5rem;
+}
+
+/* ===========================   End  Dentists ======================================== */
+
+/* ========================= Start Customers Say    ======================== */
+
+.herobackground {
+  margin-top: 5rem;
+  position: relative;
+  height: 100vh;
+  &::before {
+    content: "";
+    background-image: url(../images/uywgdc.png);
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: #1ab6eb;
+    opacity: 0.1;
+  }
+}
+
+.herobackground .conta {
+  display: flex;
+  align-items: center;
+  margin-left: 5rem;
+  gap: 2rem;
+}
+
+.herobackground .hero__card__apan {
+  font-family: "Lexend Deca", Sans-serif;
+  font-size: 50px;
+  font-weight: 500;
+  line-height: 1.2em;
+  letter-spacing: -1.7px;
+}
+
+.herobackground p {
+  color: #616a85;
+  font-family: "Lexend Deca", Sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  margin-top: 2rem;
+}
+.herobackground__titel {
+  margin-top: 5rem;
+}
+
+.herobackground__card {
+  margin-top: 5rem;
+  border-radius: 0 5rem;
+  padding: 2.5rem;
+  background-color: #dee2e6;
+}
+
+.hero__card__box p {
+  color: #142349;
+  font-family: "Lexend Deca", Sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.3em;
+  letter-spacing: -0.1px;
+}
+
+.hero__card__box span {
+  color: #616a85ba;
+  font-family: "Lexend Deca", Sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+/* ====================== End Customers Say ============================== */
+
+/* =================================  Start Our Clinic  ================================= */
+
+.Clinic {
+  margin-top: 5rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 5rem;
+  align-items: center;
+  margin-bottom: 100px;
+}
+
+.Smile__text__card {
+  margin-top: 2rem;
+}
+
+.Smile__text__card__item {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.Smile__text__card__item img {
+  width: 10%;
+}
+/* =======================  End Our Clinic============================= */
+
+/*  =========================== Start Get Off  ========================= */
+
+.off {
+  background-image: url(../images/94tgj4t.png);
+  height: 80vh;
+  background-color: #4268d2;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+.off__card {
+  margin-top: 5rem;
+}
+
+.off__card__header {
+  text-align: center;
+  color: #ffffff;
+  font-family: "Lexend Deca", Sans-serif;
+  font-size: 76px;
+  font-weight: 500;
+  line-height: 1.2em;
+  letter-spacing: -1.7px;
+}
+
+.off__card__apan {
+  color: #1ab6eb;
+}
+
+.off__card p {
+  text-align: center;
+  color: #ffffff;
+  font-family: "Lexend Deca", Sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.6em;
+}
+
+.off__card button {
+  background-color: #fff;
+  color: #1ab6eb;
+}
+
+.off__imag {
+  position: relative;
+}
+
+.off__imag img {
+  position: absolute;
+  top: -13rem;
+  right: 0;
+}
+
+/* ================= End  Get Off  ========================== */
+
+/* ================= Start slider ========================= */
+
+.slider {
+  padding: 2rem;
+  /* height: 427px; */
+  display: flex;
+  background: transparent;
+}
+.slider .card {
+  flex: 1;
+  margin: 0 10px;
+  background: #ffff;
+  border: 1px solid #d6dbdb;
+  border-radius: 16px;
+  overflow: hidden;
+  -webkit-border-radius: 16px;
+  -moz-border-radius: 16px;
+  -ms-border-radius: 16px;
+  -o-border-radius: 16px;
+}
+
+.slider .card .img {
+  transition: all 0.2s ease;
+  overflow: hidden;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+}
+
+.slider .card .img img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+}
+
+/* ======================= End slider ================== */
+
+/* ==================  Start footer  ======================== */
+
+.footer {
+  background-color: #ecf2fe;
+  text-align: center;
+  padding: 0.5rem;
+}
+
+.footer__text {
+  color: #b0bacc;
+}
+
+/* ================== End footer  ======================== */
+
+/* $$$$$$$$$$$$$$$$$$$$$$$$$   End  High Quality $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$  */
+
+/* $$$$$$$$$$$$$$$$$$$$$$$$$$  Start treatment $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$  */
+
+/* ==================  Start  ==================  */
+
+.heroo {
+  &::before {
+    content: "";
+    background-image: url(../images/filter.png);
+    background-size: cover;
+    position: absolute;
+    background-color: #1ab6eb;
+    opacity: 0.1;
+    top: 0px;
+    right: 0px;
+    bottom: 15rem;
+    left: 0px;
+  }
+}
+
+.cont {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.cont__header,
+.cont__text {
+  text-align: center;
+  color: #142349;
+  font-family: "Lexend Deca", Sans-serif;
+  font-size: 66px;
+  font-weight: 500;
+  line-height: 1.2em;
+  letter-spacing: -0.7px;
+}
+
+.cont__text {
+  color: #4268d2;
+  font-size: 40px;
+}
+
+.cont__title {
+  margin-top: 1.5rem;
+  width: 50%;
+  text-align: center;
+  color: #616a85;
+  font-family: "Lexend Deca", Sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.6em;
+}
+
+.hero__card__apan {
+  text-align: left;
+  font-family: "Lexend Deca", Sans-serif;
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 1.2em;
+  letter-spacing: -0.7px;
+}
+
+.Questions .Smile {
+  background-image: none;
+}
+
+.secondary__title {
+  font-style: italic;
+  text-align: center;
+  padding-bottom: 3rem;
+}
+
+.accordion-item {
+  border: 0;
+  border-bottom: 1px solid #3353ae;
+}
+
+.filter {
+  position: relative;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &::before {
+    content: "";
+    background-image: url(../images/filter.png);
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: #1ab6eb;
+    opacity: 0.1;
+  }
+}
+
+.heero {
+  margin-top: 6rem;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.hero__header,
+.hero__text {
+  text-align: center;
+  color: #142349;
+  font-family: "Lexend Deca", Sans-serif;
+  font-size: 66px;
+  font-weight: 500;
+  line-height: 1.2em;
+  letter-spacing: -0.7px;
+}
+
+.hero__text {
+  color: #4268d2;
+}
+
+.hero__title {
+  margin-top: 1.5rem;
+  width: 50%;
+  text-align: center;
+  color: #616a85;
+  font-family: "Lexend Deca", Sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.6em;
+}
+/*  Start Different  */
+
+.different {
+  margin-top: 5rem;
+  background-color: #edfcfd;
+  height: auto;
+}
+
+.different__imges {
+  width: 100%;
+  position: relative;
+}
+
+.different__imges img {
+  margin-left: 5rem;
+  border-radius: 2rem;
+}
+
+.different p {
+  text-align: center;
+  text-align: center;
+  color: #616a85;
+  font-family: "Lexend Deca", Sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.6em;
+}
+
+.different__card {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-left: 7rem;
+  margin-top: 2rem;
+}
+
+.buy-link__content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-color: #ebf0e4;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(18, 107, 176);
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 60px;
+  box-shadow: rgba(28, 30, 35, 0.15) -6.772px 8.668px 16px 0;
+}
+
+.buy-link__content:hover {
+  background-color: #fff;
+  transform: scale(1.5);
+}
+
+.buy-link__content::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  bottom: -2px;
+  right: -2px;
+  border-radius: inherit;
+  border: 2px solid #4268d2;
+  animation: pulse 2s cubic-bezier(0.23, 1, 0.32, 1) both infinite;
+  border-color: #4268d2;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(2);
+    opacity: 0;
+    -webkit-transform: scale(2);
+    -moz-transform: scale(2);
+    -ms-transform: scale(2);
+    -o-transform: scale(2);
+  }
+}
+/* $$$$$$$$$$$$$$$$$$$$$$$  End  treatment $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$  */
+
+/* $$$$$$$$$$$$$$$$$$$$$$$ Start  Shop  $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+
+/* ============== card  background =============  */
+.cardg {
+  background-image: linear-gradient(
+      to bottom,
+      rgb(20 35 73 / 64%) 0%,
+      rgb(22 35 73 / 91%) 100%
+    ),
+    url(../images/bg.png);
+
+  height: 50vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 3rem;
+}
+
+.cardg__header {
+  text-align: center;
+  color: #fff;
+  font-family: "Lexend Deca", Sans-serif;
+  font-size: 3rem;
+  font-weight: 500;
+  line-height: 1.2em;
+  letter-spacing: -0.7px;
+}
+
+.cardg__text {
+  text-align: center;
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+.cardg__span {
+  color: #1ab6eb;
+}
+
+/*   ===================== card  background ===================== */
+
+/* ======================= Start datalist =============== */
+
+.datalist {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1.5rem;
+}
+
+.datalist__text {
+  border: none;
+  padding: 1rem 0;
+  color: #6978a9;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.5;
+  font-family: inherit;
+  letter-spacing: normal;
+}
+
+.orderby {
+  color: #3353ae;
+  font-size: 21px;
+  width: 24%;
+  border-radius: 7px;
+  font-weight: 500;
+  width: 15%;
+}
+
+.card__datalis {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card-img-top {
+  background-color: #efefef;
+}
+
+.card-text {
+  color: #142349;
+  padding: 1.5rem 0 0.5rem 0;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.25;
+  letter-spacing: normal;
+}
+
+.card-spen i {
+  color: #3353ae;
+  margin-bottom: 1rem;
+}
+
+.card-spen--w i {
+  color: #ced4da;
+  margin-bottom: 1rem;
+}
+
+.card-hed {
+  font-weight: 700;
+  color: #142349;
+  font-size: 18px;
+  line-height: 27px;
+  letter-spacing: normal;
+}
+
+.page-number {
+  margin-bottom: 2rem;
+  padding: 1rem 1rem 0.5rem 1rem;
+  text-align: center;
+}
+
+.page-number__item {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  border: 2px solid #e9ecef;
+  padding: 1rem;
+}
+
+.page-number__item span {
+  color: #4d5ce5;
+  background: #dee2e6;
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+  padding: 10px 15px;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: normal;
+}
+/* =============== End datalist  ================ */
+
+/* $$$$$$$$$$$$$$$$$$$$$$$  End   Shop  $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+
+/* $$$$$$$$$$$$$$$$$$ Start Cart $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$44  */
+
+.cart {
+  border: 2px solid #e9ecef;
+  margin-top: 3rem;
+}
+
+.cart__colty {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 3rem;
+  padding: 2rem;
+  border-bottom: 1px solid #e9ecef;
+}
+.cart__colty div {
+  display: flex;
+  gap: 5rem;
+  margin-left: 30rem;
+}
+.cart__shop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cart__shop img {
+  width: 15%;
+}
+
+.cart__shop p {
+  font-size: 23px;
+}
+.cart__shop input {
+  width: 10%;
+}
+
+.ss {
+  display: flex;
+  gap: 2rem;
+  justify-content: flex-start;
+  margin-left: -14rem;
+}
+
+.cart__check {
+  position: relative;
+  border-top: 1px solid #e9ecef;
+  padding: 2rem;
+}
+.cart__check input {
+  border-radius: 10px;
+  padding: 13px;
+  border: 2px var(--bs-indigo) solid;
+  border-right: 0;
+}
+
+.cart__check button {
+  position: absolute;
+  top: 6px;
+  left: 12rem;
+}
+
+.buttn {
+  margin-top: 1.5rem;
+  font-family: "Lexend Deca", Sans-serif;
+  font-size: 18px;
+  border: none;
+  color: #000;
+  border: 2px var(--bs-indigo) solid;
+  background-color: transparent;
+  border-radius: 100px 100px 100px 100px;
+  padding: 13px;
+}
+
+.buttn:hover {
+  background-color: #3353ae;
+}
+
+/* $$$$$$$$$$$$$$$$$$$$$$ End Cart #$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+
+/* $$$$$$$$$$$$$$$$$$ Start Dental Blog Classic $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+
+.card-body {
+  background-color: #ecf2fe;
+}
+.category-card {
+  position: relative;
+  box-shadow: 0 0 3px 1px #ccc;
+  overflow: hidden;
+}
+.category-card__image {
+  display: block;
+  width: 100%;
+  transition: all 1s;
+}
+
+.category-card:hover .category-card__image {
+  transform: scale(1.2);
+}
+
+.card-icon {
+  display: flex;
+  color: #6978a9;
+  gap: 2rem;
+}
+
+.card-title {
+  font-size: 24px;
+  margin-top: 15px;
+  background-image: linear-gradient(120deg, #4d5ce55e 0%, #4d5ce55e 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 0.4em;
+  background-position: 0 99%;
+  width: fit-content;
+}
+
+.card-text {
+  color: #6978a9;
+}
+
+.text__col {
+  color: #4d5ce5;
+  font-weight: 500;
+}
+
+.pagination {
+  padding: 2rem;
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+}
+.pagination a {
+  display: flex;
+  gap: 9px;
+  align-items: center;
+}
+/*$$$$$$$$$$$$$$$$ End Dental Blog Classic $$$$$$$$$$$$$$$$$$$$$$$$ */
+
+/* $$$$$$$$$$$$$$$$$$$  Start Dental Blog with Sidebar  $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+
+/* .sidebar {
+  background-color: brown;
+} */
+
+.sidebar__card {
+  border-radius: 2rem;
+  padding: 3rem 2rem;
+  margin-top: 3rem;
+  background-color: #ecf2fe;
+}
+
+.sidebar__card p {
+  color: #142349;
+  font-size: 27px;
+  font-weight: 500;
+  text-align: left;
+  margin-top: 0;
+  line-height: 1.5;
+  background-image: linear-gradient(120deg, #4d5ce55e 0%, #4d5ce55e 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 0.6em;
+  background-position: 0 99%;
+  width: fit-content;
+}
+
+.sidebar__card select {
+  width: 70%;
+  padding: 6px;
+}
+
+.orderby__les {
+  font-size: 15px;
+  border-radius: 7px;
+  color: #000;
+  border: 1px solid #3353ae;
+  font-weight: 600;
+}
+
+.tagcloud a {
+  color: #142349;
+  border: 1px solid #8d9ccd;
+  border-radius: 10px;
+  padding: 6px 12px;
+  margin-bottom: 7px;
+  display: inline-block;
+  font-weight: 700;
+  /* transition: all .45s; */
+}
+
+.sidebar__card ul li {
+  margin-bottom: 1rem;
+}
+
+.sidebar__card ul li a {
+  font-weight: 500;
+}
+
+.wrapper ul li {
+  margin-bottom: 0;
+}
+
+.wrapper {
+  background: transparent;
+}
+.wrapper header {
+  display: flex;
+  align-items: center;
+  padding: 25px 30px 10px;
+  justify-content: space-between;
+  border-radius: 10px 10px 0 0;
+}
+
+header .current-date {
+  font-size: 21px;
+  font-weight: 500;
+  color: #3353ae;
+}
+.calendar {
+  padding: 20px;
+}
+.calendar ul {
+  padding: 0;
+  margin-bottom: 0;
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  text-align: center;
+}
+.calendar .days {
+  margin-bottom: 20px;
+}
+.calendar li {
+  color: #333;
+  width: calc(100% / 7);
+  font-size: 1.07rem;
+}
+.calendar .weeks li {
+  font-weight: 500;
+  cursor: default;
+}
+.calendar .days li {
+  z-index: 1;
+  cursor: pointer;
+  position: relative;
+  margin-top: 20px;
+}
+.days li.inactive {
+  color: #aaa;
+}
+.days li.active {
+  color: #3353ae;
+}
+.days li::before {
+  position: absolute;
+  content: "";
+  left: 50%;
+  top: 50%;
+  height: 40px;
+  width: 40px;
+  z-index: -1;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+.days li.active::before {
+  color: #1e90ff;
+}
+.days li:not(.active):hover::before {
+  background: #f2f2f2;
+}
+
+.sidebar__card__item img {
+  border-radius: 5px;
+}
+
+.sidebar__card__item a {
+  font-size: 17px;
+  font-weight: 500;
+}
+/*$$$$$$$$$$$$$$$$$$ End Dental Blog with Sidebar $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+
+/* $$$$$$$$$$$$$$$$$$$$$$$$ Start About $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+
+/* ======================== Team =============================== */
+
+.team {
+  margin-top: 5rem;
+}
+
+.team__card {
+  background-color: #4268d2;
+  padding: 2rem;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.team__card__header {
+  color: #ffffff;
+  font-family: "Lexend Deca", Sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1.3em;
+  letter-spacing: -0.3px;
+}
+
+.team__card__pro {
+  color: #ffffffa8;
+  font-family: "Lexend Deca", Sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 0.3px;
+}
+
+.team__card__icon {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.team__card__icon i {
+  padding: 10px;
+  border-radius: 50%;
+  background-color: #142349;
+  color: #92c1fa;
+}
+
+.team__card__icon i:hover {
+  background-color: #fff;
+}
+
+/* $$$$$$$$$$$$$$$$$$$ End About $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$4 */
+
+/* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$  Fees =$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$  */
+
+main {
+  background-image: url(../images/ifeuvf.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.general {
+  border-radius: 35px;
+  padding: 3rem;
+  background-color: #fff;
+  margin-bottom: 2rem;
+}
+
+.general__card {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.general__card hr {
+  width: 65%;
+  background-color: currentColor;
+  border: 0;
+  opacity: 0.25;
+  height: 1px;
+  color: #3f51b5;
+}
+
+.general__header,
+.general__text {
+  font-size: 40px;
+}
+
+.general__text,
+.general__card__pres {
+  color: #3f51b5;
+}
+
+.general__card__pres {
+  font-size: 30px;
+}
+
+.general__card__text {
+  color: #142349;
+  font-family: "Lexend Deca", Sans-serif;
+  font-size: 21px;
+  font-weight: 300;
+  letter-spacing: -0.6px;
+}
+
+/* $$$$$$$$$$$$$$$$$$$$$$$$$4 Fees $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+
+/* $$$$$$$$$$$$$$$$$$$$$$$$4 Team $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$  */
+
+/* =================  Google map  ============== */
+
+.map {
+  margin-top: 4rem;
+}
+
+.map iframe {
+  width: 100%;
+  height: 80vh;
+  filter: brightness(50%) contrast(100%) saturate(0%) blur(0px)
+    hue-rotate(22deg);
+}
+
+/* $$$$$$$$$$$$$$$$$$$$$$$$4 Team $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$  */
+
+/* $$$$$$$$$$$$$$$$$$$$$$$$4 My account$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$  */
+
+/* ============== Login =================== */
+
+.login_header {
+  margin-bottom: 3rem;
+  text-align: center;
+  font-size: 3rem;
+}
+
+.but {
+  padding: 6px;
+  border-radius: 16%;
+  color: #fff;
+  background-color: #4d5ce5;
+  border: none;
+  margin-bottom: 15px;
+}
+
+.but:hover {
+  background-color: #3353ae;
+}
+
+.label {
+  color: #142349;
+  font-weight: 500;
+  margin-bottom: 0.65rem;
+  margin-top: 0.5rem;
+}
+
+.anker {
+  color: #3353ae;
+  line-height: 19px;
+  font-size: 17px;
+  font-weight: 600;
+}
+
+/* $$$$$$$$$$$$$$$$$$$$$$$$4 My account $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$  */
+
+/* $$$$$$$$$$$$$$$$$$$$$$$$$$   Contact Us $$$$$$$$$$$$$$$$$$$$$$$$4 */
+
+/* ===================   Contact =============================== */
+
+.Sign {
+  background-image: url(../images/ifeuvf.png);
+  height: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.Sign__card {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 4rem;
+}
+
+.Sign__images {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.Sign__but {
+  background-color: #4d5ce5;
+  padding: 13px 31px;
+  color: #fff;
+  font-size: 20px;
+}
+
+.Sign__but:hover {
+  background-color: #3353ae;
+  color: #fff;
+}
+
+.Sign form {
+  background-color: #fff;
+  border: 1px solid #fff;
+  padding: 5rem 2rem;
+}
+
+.Sign form h5 {
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+/* -================================================= */
+
+.card__about {
+  margin-top: 3rem;
+  margin-bottom: 5rem;
+}
+
+.card__about__item {
+  border-radius: 5px;
+  padding: 3rem;
+  background-color: #fff;
+  border: #fff;
+}
+
+.card__about .icon {
+  font-size: 1.5rem;
+  color: #fff;
+  background-color: #4268d2;
+  border-radius: 50%;
+  padding: 15px;
+}
+
+.card__about .icon:hover {
+  color: #000;
+  background-color: #1ab6eb;
+}
+
+/* -================================================= */
+
+.filteeer {
+  position: relative;
+  &::before {
+    content: "";
+    background-image: url(../images/filter.png);
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: #1ab6eb;
+    opacity: 0.1;
+  }
+}
+
+.filteeer__cardtext {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.find {
+  color: #000;
+  padding: 5rem;
+  display: flex;
+  gap: 2rem;
+}
+
+.find__header,
+.find_text {
+  text-align: center;
+  color: #142349;
+  font-family: "Lexend Deca", Sans-serif;
+  font-size: 55px;
+  font-weight: 500;
+  line-height: 1.2em;
+  letter-spacing: -0.7px;
+  margin-top: 2rem;
+}
+
+.find_text {
+  color: #4268d2;
+}
+
+.find__title {
+  margin-top: 1.5rem;
+  text-align: center;
+  color: #616a85;
+  font-family: "Lexend Deca", Sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 1.6em;
+}
+
+.find__map__item iframe {
+  width: 100%;
+  height: 75vh;
+}
+
+.find__card__body {
+  padding: 3.5rem;
+  position: relative;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+.find__card__body h4 {
+  color: #0f192f;
+  font-family: "Lexend Deca", Sans-serif;
+  font-size: 36px;
+  font-weight: 500;
+}
+
+.find__card__body p {
+  color: #616a85;
+  font-family: "Lexend Deca", Sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.6em;
+}
+
+/* $$$$$$$$$$$$$$$$$$$$$ Contact Us $$$$$$$$$$$$$$$$$$$$$$$$$$4 */
+
+/* ============  media query section ==================== */
+
+@media screen and (max-width: 767px) {
+  .navbar {
+    display: none;
+  }
+  .nav__bars {
+    display: block;
+    font-size: 31px;
+  }
+  .hero__card__title {
+    width: 80%;
+  }
+  .hero__card__images {
+    padding-left: 7rem;
+  }
+  .hero__card__images img {
+    width: 100%;
+  }
+  .hero__card__headeer {
+    font-size: 2rem;
+  }
+  .Smile__img {
+    width: 100%;
+  }
+  .Smile__text {
+    width: 100%;
+  }
+  .teeth__boxx {
+    flex-wrap: wrap;
+  }
+  .teeth__box {
+    flex-wrap: wrap;
+  }
+  .dentists__card {
+    flex-wrap: wrap;
+    padding: 2rem;
+  }
+  .dentists__number {
+    flex-wrap: wrap;
+  }
+  .herobackground .conta {
+    flex-wrap: wrap;
+  }
+  .herobackground {
+    height: auto;
+  }
+  .herobackground .conta {
+    margin-left: 3rem;
+  }
+  .Clinic {
+    flex-wrap: wrap;
+  }
+  .off__card {
+    margin-top: 1rem;
+  }
+  .off__imag img {
+    top: -9rem;
+  }
+  .cont__title {
+    width: 90%;
+  }
+
+  .different__imges img {
+    width: 100%;
+    margin-left: 0rem;
+  }
+  .blog {
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 767px) and (max-width: 1024px) {
+  .navbar {
+    display: none;
+  }
+  .nav__bars {
+    display: block;
+    font-size: 31px;
+  }
+  .hero__card__title {
+    width: 80%;
+    margin-top: 3rem;
+  }
+  .hero__card__images {
+    padding-left: 7rem;
+    margin-top: 2rem;
+  }
+  .hero__card__images img {
+    width: 100%;
+  }
+  .hero__card__headeer {
+    font-size: 2rem;
+  }
+  .Smile__img {
+    width: 100%;
+  }
+  .Smile__text {
+    width: 100%;
+  }
+  .teeth__boxx {
+    flex-wrap: wrap;
+  }
+  .teeth__box {
+    flex-wrap: wrap;
+  }
+  .dentists__card {
+    flex-wrap: wrap;
+    padding: 2rem;
+  }
+  .dentists__number {
+    flex-wrap: wrap;
+  }
+  .herobackground .conta {
+    flex-wrap: wrap;
+  }
+  .herobackground {
+    height: auto;
+  }
+  .herobackground .conta {
+    margin-left: 3rem;
+  }
+  .Clinic {
+    flex-wrap: wrap;
+  }
+  .off__card {
+    margin-top: 1rem;
+  }
+  .off__imag img {
+    top: -5rem;
+  }
+  .cont__title {
+    width: 90%;
+  }
+
+  .different__imges img {
+    width: 100%;
+    margin-left: 0rem;
+  }
+  .blog {
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+  }
+}
